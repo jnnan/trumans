@@ -85,7 +85,7 @@
               <br>
               <sup>4</sup>School of EECS, Peking University &nbsp&nbsp <sup>5</sup>School of Computer Science, Center on Frontiers of Computing Studies, Peking University
               <br>
-              <sup>6</sup>School of Computer Science & Technology, Beijing Institute of Technolog
+              <sup>6</sup>School of Computer Science & Technology, Beijing Institute of Technology
             </span>
             <!-- <br>
             <span class="author-block">Conferance name and year</span> -->
@@ -149,9 +149,17 @@
 
 <!-- Teaser demo-->
 <div id="teaser-demo" class="container is-max-desktop">
+  <div class="item has-text-centered">
+    <h2 class="title is-3">
+      Demos of TRUMANS
+    </h2>
+    <h2 class="subtitle has-text-centered">
+      <sup>*</sup>Drag to rotate the scene
+    </h2>
+  </div>
   <div class="carousel demo-carousel">
-
     <div class="item has-text-centered">
+
       <canvas id="canvas1" class="webgl" style="height: 100%; width: 100%;"></canvas>
       <h2 class="subtitle has-text-centered">
         A Motion clip from TRUMANS in a bedroom.
@@ -159,6 +167,9 @@
     </div>
 
     <div class="item has-text-centered">
+<!--      <h2 class="subtitle has-text-centered">-->
+<!--        Demos of TRUMANS (Drag to rotate the scene)-->
+<!--      </h2>-->
       <canvas id="canvas2" class="webgl" style="height: 100%; width: 100%;"></canvas>
       <h2 class="subtitle has-text-centered">
         A Motion clip from TRUMANS in a living room.
@@ -168,6 +179,8 @@
   </div>
 </div>
 <!-- End teaser demo -->
+
+<h2 class="subtitle has-text-centered"> </h2>
 
 
 <!-- Paper abstract -->
@@ -187,12 +200,29 @@
 </section>
 <!-- End paper abstract -->
 
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title">Motion Synthesis Method</h2>
+        <div class="content has-text-justified">
+          <img src="static/images/method.png"/>
+          <p>
+            The overall architecture of our model. (a) Our model leverages an auto-regressive diffusion sampling strategy, whereby the long-sequence motion is sampled episode by episode. (b) The diffusion model incorporates DDPM with a transformer architecture, the frames of human joint being the input tokens. (c)(d) The action and scene conditions are encoded and forward to the first token.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
 
 <!-- Video carousel -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container is-max-desktop">
-      <h1 class="title">Synthesized Motions of Our Method</>
+      <h1>Synthesized Motions of Our Method</h1>
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-video1">
           <div class="item has-text-centered">
@@ -281,7 +311,7 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container is-max-desktop">
-      <h1 class="title">Features of TRUMANS Dataset</h1>
+      <h1>Features of TRUMANS Dataset</h1>
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-video1">
           <div class="item has-text-centered">
