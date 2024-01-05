@@ -154,14 +154,14 @@
     <div class="item has-text-centered">
       <canvas id="canvas1" class="webgl" style="height: 100%; width: 100%;"></canvas>
       <h2 class="subtitle has-text-centered">
-        First image description.
+        A Motion clip from TRUMANS in a bedroom.
       </h2>
     </div>
 
     <div class="item has-text-centered">
       <canvas id="canvas2" class="webgl" style="height: 100%; width: 100%;"></canvas>
       <h2 class="subtitle has-text-centered">
-        Second image description.
+        A Motion clip from TRUMANS in a living room.
       </h2>
     </div>
   
@@ -178,7 +178,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            The advancing of human-scene interaction modeling confronts substantial challenges in the scarcity of high-quality data and advanced motion synthesis methods. Previous endeavors have been inadequate in offering sophisticated datasets that effectively tackle the dual challenges of scalability and data quality. In this work, we overcome these challenges by introducing TRUMANS (TRacking hUMan ActioNs in Scenes), a large-scale MoCap dataset created by efficiently and precisely replicating the synthetic scenes in the physical environment. TRUMANS, featuring the most extensive motion-captured human-scene interaction datasets thus far, comprises over 15 hours of diverse human behaviors, including concurrent interactions with dynamic and articulated objects, across 100 indoor scene configurations. It provides accurate pose sequences of both humans and objects, ensuring a high level of contact plausibility during the interaction. To further enhance adaptivity, we propose a data augmentation approach that automatically adapts collision-free and interaction-precise human motions. Leveraging the benefits of TRUMANS, we propose a novel approach that employs a diffusion-based autoregressive mechanism for the real-time generation of human-scene interaction sequences with arbitrary length. The efficacy of TRUMANS and our motion synthesis method is validated through extensive experimental results, surpassing all existing baselines in terms of quality and diversity. Notably, our method demonstrates superb zero-shot generalizability on existing 3D scene datasets (e.g., PROX, Replica, ScanNet, ScanNet++), capable of generating even more realistic motions than the ground-truth annotations on PROX. Our human study further indicates that our generated motions are almost indistinguishable from the original motion-captured sequences, highlighting their superior quality. Our dataset and model will be released for research purposes.
           </p>
         </div>
       </div>
@@ -188,93 +188,88 @@
 <!-- End paper abstract -->
 
 
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End youtube video -->
-
-
 <!-- Video carousel -->
 <section class="hero is-small">
   <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
+    <div class="container is-max-desktop">
+      <h1>Synthesized Motions of Our Method</h1>
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
+          <div class="item has-text-centered">
+            <video poster="" id="video1" autoplay controls muted loop height="100%">
+              <!-- Your video file here -->
+              <source src="static/videos/Bottle_1.mp4"
+              type="video/mp4">
+            </video>
+<!--            <h1 class="title is-4"></h1>-->
+            <h1 class="title is-4">Synthesized Motions with objects dynamically involved</h1>
+          </div>
         </div>
         <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
+          <div class="item has-text-centered">
+            <video poster="" id="video2" autoplay controls muted loop height="100%">
+              <!-- Your video file here -->
+              <source src="static/videos/Phone_1.mp4"
+              type="video/mp4">
+            </video>
+<!--            <h1 class="title is-4"></h1>-->
+            <h1 class="title is-4">Synthesized Motions with objects dynamically involved</h1>
+          </div>
         </div>
         <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
+          <div class="item has-text-centered">
+            <video poster="" id="video3" autoplay controls muted loop height="100%">
+              <!-- Your video file here -->
+              <source src="static/videos/Game_1.mp4"
+              type="video/mp4">
+            </video>
+<!--            <h1 class="title is-4"></h1>-->
+            <h1 class="title is-4">Real-time Game Control</h1>
+          </div>
+        </div>
+        <div class="item item-video4">
+          <div class="item has-text-centered">
+            <video poster="" id="video4" autoplay controls muted loop height="100%">
+              <!-- Your video file here -->
+              <source src="static/videos/DiverseMotion_1.mp4"
+              type="video/mp4">
+            </video>
+<!--            <h1 class="title is-4"></h1>-->
+            <h1 class="title is-4">Diverse synthesized locomotion and interaction with object scenes</h1>
+          </div>
+        </div>
+        <div class="item item-video5">
+          <div class="item has-text-centered">
+            <video poster="" id="video5" autoplay controls muted loop height="100%">
+              <!-- Your video file here -->
+              <source src="static/videos/AvoidCollision_1.mp4"
+              type="video/mp4">
+            </video>
+<!--            <h1 class="title is-4"></h1>-->
+            <h1 class="title is-4">Natural collision avoidance</h1>
+          </div>
+        </div>
+        <div class="item item-video6">
+          <div class="item has-text-centered">
+            <video poster="" id="video6" autoplay controls muted loop height="100%">
+              <!-- Your video file here -->
+              <source src="static/videos/AvoidCollision_2_1.mp4"
+              type="video/mp4">
+            </video>
+<!--            <h1 class="title is-4"></h1>-->
+            <h1 class="title is-4">Natural collision avoidance</h1>
+          </div>
+        </div>
+        <div class="item item-video7">
+          <div class="item has-text-centered">
+            <video poster="" id="video7" autoplay controls muted loop height="100%">\
+              <!-- Your video file here -->
+              <source src="static/videos/AnyStart_1_lower.mp4"
+              type="video/mp4">
+            </video>
+<!--            <h1 class="title is-4"></h1>-->
+            <h1 class="title is-4">Motion synthesis starting from any pose</h1>
+          </div>
         </div>
       </div>
     </div>
@@ -283,18 +278,137 @@
 <!-- End video carousel -->
 
 
-<!-- Paper poster -->
-<section class="hero is-small is-light">
+<section class="hero is-small">
   <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
+    <div class="container is-max-desktop">
+      <h1>Features of TRUMANS Dataset</h1>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <div class="item has-text-centered">
+            <video poster="" id="video8" autoplay controls muted loop height="100%">
+              <!-- Your video file here -->
+              <source src="static/videos/AugObject.mp4"
+              type="video/mp4">
+            </video>
+<!--            <h1 class="title is-4"></h1>-->
+            <h1 class="title is-4">Replaceable background</h1>
+          </div>
+        </div>
+        <div class="item item-video2">
+          <div class="item has-text-centered">
+            <video poster="" id="video9" autoplay controls muted loop height="100%">
+              <!-- Your video file here -->
+              <source src="static/videos/AugBack.mp4"
+              type="video/mp4">
+            </video>
+<!--            <h1 class="title is-4"></h1>-->
+            <h1 class="title is-4">Replaceable objects</h1>
+          </div>
+        </div>
+        <div class="item item-video3">
+          <div class="item has-text-centered">
+            <video poster="" id="video10" autoplay controls muted loop height="100%">
+              <!-- Your video file here -->
+              <source src="static/videos/Anno.MP4"
+              type="video/mp4">
+            </video>
+<!--            <h1 class="title is-4"></h1>-->
+            <h1 class="title is-4">Extensive annotations</h1>
+          </div>
+        </div>
+        <div class="item item-video4">
+          <div class="item has-text-centered">
+            <video poster="" id="video11" autoplay controls muted loop height="100%">
+              <!-- Your video file here -->
+              <source src="static/videos/Wall.mp4"
+              type="video/mp4">
+            </video>
+<!--            <h1 class="title is-4"></h1>-->
+            <h1 class="title is-4">Diverse HOI motions</h1>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
+<!-- End video carousel -->
+
+
+<!-- Image carousel -->
+<!--<section class="hero is-small">-->
+<!--  <div class="hero-body">-->
+<!--    <div class="container">-->
+<!--      <div id="results-carousel" class="carousel results-carousel">-->
+<!--       <div class="item">-->
+<!--        &lt;!&ndash; Your image here &ndash;&gt;-->
+<!--        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>-->
+<!--        <h2 class="subtitle has-text-centered">-->
+<!--          First image description.-->
+<!--        </h2>-->
+<!--      </div>-->
+<!--      <div class="item">-->
+<!--        &lt;!&ndash; Your image here &ndash;&gt;-->
+<!--        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>-->
+<!--        <h2 class="subtitle has-text-centered">-->
+<!--          Second image description.-->
+<!--        </h2>-->
+<!--      </div>-->
+<!--      <div class="item">-->
+<!--        &lt;!&ndash; Your image here &ndash;&gt;-->
+<!--        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>-->
+<!--        <h2 class="subtitle has-text-centered">-->
+<!--         Third image description.-->
+<!--       </h2>-->
+<!--     </div>-->
+<!--     <div class="item">-->
+<!--      &lt;!&ndash; Your image here &ndash;&gt;-->
+<!--      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>-->
+<!--      <h2 class="subtitle has-text-centered">-->
+<!--        Fourth image description.-->
+<!--      </h2>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</section>-->
+<!-- End image carousel -->
+
+
+<!-- Youtube video -->
+<!--<section class="hero is-small is-light">-->
+<!--  <div class="hero-body">-->
+<!--    <div class="container">-->
+<!--      &lt;!&ndash; Paper video. &ndash;&gt;-->
+<!--      <h2 class="title is-3">Video Presentation</h2>-->
+<!--      <div class="columns is-centered has-text-centered">-->
+<!--        <div class="column is-four-fifths">-->
+<!--          -->
+<!--          <div class="publication-video">-->
+<!--            &lt;!&ndash; Youtube embed code here &ndash;&gt;-->
+<!--            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</section>-->
+<!-- End youtube video -->
+
+
+
+
+<!-- Paper poster -->
+<!--<section class="hero is-small is-light">-->
+<!--  <div class="hero-body">-->
+<!--    <div class="container">-->
+<!--      <h2 class="title">Poster</h2>-->
+
+<!--      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">-->
+<!--          </iframe>-->
+<!--        -->
+<!--    </div>-->
+<!--  </div>-->
+<!--</section>-->
 <!--End paper poster -->
 
 

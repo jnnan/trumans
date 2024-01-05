@@ -3,7 +3,7 @@ import {OrbitControls} from 'https://unpkg.com/three@0.127.0/examples/jsm/contro
 import {GLTFLoader} from 'https://unpkg.com/three@0.127.0/examples/jsm/loaders/GLTFLoader.js';
 
 const W_H = 16 / 9;
-const allModelUrl = ['./test.glb', './test.glb'];
+const allModelUrl = ['./test.glb', './test2.glb'];
 const allCanvas = document.querySelectorAll('canvas');
 const allRenders = [];
 
