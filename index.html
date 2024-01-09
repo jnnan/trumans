@@ -147,76 +147,6 @@
 </section>
 
 
-<!-- Teaser demo-->
-<div id="teaser-demo" class="container is-max-desktop">
-  <div class="has-text-centered">
-    <h2 class="title is-3">Demos of TRUMANS</h2>
-    <h2 class="subtitle"><sup>*</sup>Drag mouse to rotate & scroll wheel to zoom in/out</h2>
-  </div>
-  <div class="carousel demo-carousel">
-    <div class="item has-text-centered">
-      <canvas id="canvas1" class="webgl" style="height: 100%; width: 100%;"></canvas>
-      <h2 class="subtitle has-text-centered">
-        A Motion clip from TRUMANS dataset in a bedroom.
-      </h2>
-    </div>
-
-    <div class="item has-text-centered">
-      <canvas id="canvas2" class="webgl" style="height: 100%; width: 100%;"></canvas>
-      <h2 class="subtitle has-text-centered">
-        A Motion clip from TRUMANS dataset in a living room.
-      </h2>
-    </div>
-
-    <div class="item has-text-centered">
-      <canvas id="canvas3" class="webgl" style="height: 100%; width: 100%;"></canvas>
-      <h2 class="subtitle has-text-centered">
-        A Motion clip from TRUMANS dataset in a kitchen.
-      </h2>
-    </div>
-
-  </div>
-</div>
-<!-- End teaser demo -->
-
-
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            The advancing of human-scene interaction modeling confronts substantial challenges in the scarcity of high-quality data and advanced motion synthesis methods. Previous endeavors have been inadequate in offering sophisticated datasets that effectively tackle the dual challenges of scalability and data quality. In this work, we overcome these challenges by introducing TRUMANS (TRacking hUMan ActioNs in Scenes), a large-scale MoCap dataset created by efficiently and precisely replicating the synthetic scenes in the physical environment. TRUMANS, featuring the most extensive motion-captured human-scene interaction datasets thus far, comprises over 15 hours of diverse human behaviors, including concurrent interactions with dynamic and articulated objects, across 100 indoor scene configurations. It provides accurate pose sequences of both humans and objects, ensuring a high level of contact plausibility during the interaction. To further enhance adaptivity, we propose a data augmentation approach that automatically adapts collision-free and interaction-precise human motions. Leveraging the benefits of TRUMANS, we propose a novel approach that employs a diffusion-based autoregressive mechanism for the real-time generation of human-scene interaction sequences with arbitrary length. The efficacy of TRUMANS and our motion synthesis method is validated through extensive experimental results, surpassing all existing baselines in terms of quality and diversity. Notably, our method demonstrates superb zero-shot generalizability on existing 3D scene datasets (e.g., PROX, Replica, ScanNet, ScanNet++), capable of generating even more realistic motions than the ground-truth annotations on PROX. Our human study further indicates that our generated motions are almost indistinguishable from the original motion-captured sequences, highlighting their superior quality. Our dataset and model will be released for research purposes.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
-
-
-<!-- Paper abstract -->
-<section class="section hero">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Motion Synthesis Method</h2>
-        <div class="content has-text-justified">
-          <img src="static/images/method.png"/>
-          <p>
-            The overall architecture of our model. (a) Our model leverages an auto-regressive diffusion sampling strategy, whereby the long-sequence motion is sampled episode by episode. (b) The diffusion model incorporates DDPM with a transformer architecture, the frames of human joint being the input tokens. (c)(d) The action and scene conditions are encoded and forward to the first token.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
-
-
 <!-- Video carousel -->
 <section class="hero is-small is-light">
   <div class="hero-body">
@@ -295,8 +225,45 @@
 <!-- End video carousel -->
 
 
-<!-- Video carousel -->
+<!-- Teaser demo-->
 <section class="hero is-small">
+  <div class="hero-body">
+    <div id="teaser-demo" class="container is-max-desktop">
+      <div class="has-text-centered">
+        <h2 class="title is-3">Demos of TRUMANS dataset</h2>
+        <h2 class="subtitle"><sup>*</sup>Drag mouse to rotate & scroll wheel to zoom in/out</h2>
+      </div>
+      <div class="carousel demo-carousel">
+        <div class="item has-text-centered">
+          <canvas id="canvas1" class="webgl" style="height: 100%; width: 100%;"></canvas>
+          <h2 class="subtitle has-text-centered">
+            A Motion clip from TRUMANS dataset in a bedroom.
+          </h2>
+        </div>
+
+        <div class="item has-text-centered">
+          <canvas id="canvas2" class="webgl" style="height: 100%; width: 100%;"></canvas>
+          <h2 class="subtitle has-text-centered">
+            A Motion clip from TRUMANS dataset in a living room.
+          </h2>
+        </div>
+
+        <div class="item has-text-centered">
+          <canvas id="canvas3" class="webgl" style="height: 100%; width: 100%;"></canvas>
+          <h2 class="subtitle has-text-centered">
+            A Motion clip from TRUMANS dataset in a kitchen.
+          </h2>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End teaser demo -->
+
+
+<!-- Video carousel -->
+<section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container is-max-desktop">
       <div class="has-text-centered">
@@ -309,7 +276,7 @@
               <source src="static/videos/AugObject.mp4"
               type="video/mp4">
             </video>
-            <h1 class="title is-4">Replaceable background</h1>
+            <h1 class="title is-4">Replaceable objects</h1>
           </div>
         </div>
         <div class="item item-video2">
@@ -318,7 +285,7 @@
               <source src="static/videos/AugBack.mp4"
               type="video/mp4">
             </video>
-            <h1 class="title is-4">Replaceable objects</h1>
+            <h1 class="title is-4">Replaceable background</h1>
           </div>
         </div>
         <div class="item item-video3">
@@ -344,6 +311,50 @@
   </div>
 </section>
 <!-- End video carousel -->
+
+<!-- Paper abstract -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              The advancing of human-scene interaction modeling confronts substantial challenges in the scarcity of high-quality data and advanced motion synthesis methods. Previous endeavors have been inadequate in offering sophisticated datasets that effectively tackle the dual challenges of scalability and data quality. In this work, we overcome these challenges by introducing TRUMANS (TRacking hUMan ActioNs in Scenes), a large-scale MoCap dataset created by efficiently and precisely replicating the synthetic scenes in the physical environment. TRUMANS, featuring the most extensive motion-captured human-scene interaction datasets thus far, comprises over 15 hours of diverse human behaviors, including concurrent interactions with dynamic and articulated objects, across 100 indoor scene configurations. It provides accurate pose sequences of both humans and objects, ensuring a high level of contact plausibility during the interaction. To further enhance adaptivity, we propose a data augmentation approach that automatically adapts collision-free and interaction-precise human motions. Leveraging the benefits of TRUMANS, we propose a novel approach that employs a diffusion-based autoregressive mechanism for the real-time generation of human-scene interaction sequences with arbitrary length. The efficacy of TRUMANS and our motion synthesis method is validated through extensive experimental results, surpassing all existing baselines in terms of quality and diversity. Notably, our method demonstrates superb zero-shot generalizability on existing 3D scene datasets (e.g., PROX, Replica, ScanNet, ScanNet++), capable of generating even more realistic motions than the ground-truth annotations on PROX. Our human study further indicates that our generated motions are almost indistinguishable from the original motion-captured sequences, highlighting their superior quality. Our dataset and model will be released for research purposes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<!-- Paper abstract -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Motion Synthesis Method</h2>
+          <div class="content has-text-justified">
+            <img src="static/images/method.png"/>
+            <p>
+              The overall architecture of our model. (a) Our model leverages an auto-regressive diffusion sampling strategy, whereby the long-sequence motion is sampled episode by episode. (b) The diffusion model incorporates DDPM with a transformer architecture, the frames of human joint being the input tokens. (c)(d) The action and scene conditions are encoded and forward to the first token.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+
+
 
 
 <!-- Image carousel -->
