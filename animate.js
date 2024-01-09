@@ -1,9 +1,10 @@
 import * as THREE from 'https://unpkg.com/three@0.127.0/build/three.module.js';
 import {OrbitControls} from 'https://unpkg.com/three@0.127.0/examples/jsm/controls/OrbitControls.js';
 import {GLTFLoader} from 'https://unpkg.com/three@0.127.0/examples/jsm/loaders/GLTFLoader.js';
+import { DRACOLoader } from 'https://unpkg.com/three@0.127.0/examples/jsm/loaders/DRACOLoader';
 
 const W_H = 16 / 9;
-const allModelUrl = ['./test.glb', './test2.glb'];
+const allModelUrl = ['./test.glb', './test2.glb', './test3.glb'];
 const allCanvas = document.querySelectorAll('canvas');
 const allRenders = [];
 
@@ -15,7 +16,12 @@ for (let i = 0; i < allCanvas.length; i++) {
 
   // load glb model and add to scene
   let mixer;
+  const draco = new DRACOLoader();
+  draco.setDecoderConfig({ type: 'js' });
+  draco.setDecoderPath('https://www.gstatic.com/draco/v1/decoders/');
+
   const assetLoader = new GLTFLoader();
+  assetLoader.setDRACOLoader(draco)
   assetLoader.load(modelUrl.href, function(gltf) {
       const model = gltf.scene;
       scene.add(model);
